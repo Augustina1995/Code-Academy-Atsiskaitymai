@@ -1,0 +1,427 @@
+@import "./desktop.css";
+
+// Colors:
+$dark-01: #111111;
+$dark-02: #555555;
+$dark-03: #777777;
+$dark-04: #999999;
+$light-01: #ffffff;
+$light-02: #eeeeee;
+$light-03: #cccccc;
+$orange: #ff8039;
+$pink: #FF3998;
+$green: #39ffa0;
+$red: #ff3939;
+$light-green: #edfff6;
+$light-orange: #fff0e8;
+$main-gradient: linear-gradient(to right, $pink, $orange, $red);
+
+// Font: 
+$main-font: "Inter", Arial, Helvetica, sans-serif;
+// Font weight: 
+$font-weight-07: 700;
+// Box model properties: 
+$margin-zero: 0;
+
+// Element colors:
+$menu-bar: $dark-04;
+
+// Mixins: 
+@mixin centerItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin paragraphGrey {
+    color: $dark-02;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 1.7em;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: $main-font;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+// Header
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+
+    div {
+        display: none;
+        
+        nav {
+            a {
+                color: $dark-02;
+            }
+
+            a:last-child {
+                color: $pink;
+            }
+        }
+    }
+
+    i {
+        font-size: 1.6em;
+        color: $menu-bar;  
+    }
+}
+
+// Section One - Hero
+
+.sectionHero {
+    height: 30vh;
+    padding-left: 0 1.9em;
+    display: flex;
+    align-items: center;
+    
+    p{
+        @include paragraphGrey();
+        margin-top: 0;
+        margin-bottom: 1.9em;
+    } 
+}
+
+.sectionHeroContainer {
+    width: 52%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.launchingSoonHeading {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $pink;
+}
+
+.nftHeading {
+    font-weight: 900;
+    font-size: 2.5em;
+    line-height: 1.3em;
+}
+
+.pinkGraphicImage {
+    width: 28em;
+    margin-left: auto;
+}
+
+// Button Sign Up
+
+.buttonSignUp {
+    width: 11em;
+    height: 4.5em;
+    border-radius: 2.2em;
+    position: relative;
+    @include centerItems();
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.buttonSignUp::before{
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 350%;
+    background: $main-gradient;
+}
+
+.buttonSignUp::after{
+    content: 'Sign Up';
+    position: absolute;
+    background-color: $light-01;
+    width: 96%;
+    height: 88%;
+    border-radius: 2.2em;
+    font-size: 2rem;
+    color: $dark-01;
+    font-weight: 500;
+    font-size: 1.25em;
+    @include centerItems();
+}
+
+// Section Two - Upsell
+
+.gradientBackground {
+    width: 32em;
+    height: 20vh;
+    background-image: url(./assets/background.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    right: 1.25em;
+
+    div {
+        padding-left: 3.1em;
+        padding-right: 2.5em;
+        padding-top: 5em;
+
+        p {
+            color: $dark-01;
+            font-weight: 400;
+            font-size: 1.25em;
+            line-height: 1.7em;
+        }
+    }
+}
+
+.headingStyle {
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+// Section Three - Press
+
+.sectionPress {
+    height: 15vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2.5em 2em;   
+}
+
+.pressCompanyLogo {
+    display: none;
+}
+
+.imageCrop {
+    width: 65%;
+    height: 4vh;
+    overflow: hidden;
+}
+
+// Section Four - Showcase
+
+.sectionShowcase {
+    height: 38vh;
+
+    div {
+        padding: 0 1.6em;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    p {
+        @include paragraphGrey();
+        padding-bottom: 1.25em;
+        a {
+            color: $dark-02;
+        }
+    }
+
+    article {
+        padding: 0 1.6em;
+
+        img {
+            display: block;
+        }
+    }
+
+    .article3 {
+        display: none;
+    }
+
+    .article4 {
+        display: none;
+    }
+}
+
+// Article Styling
+
+.productCardContainer {
+    display: flex;
+}
+
+.sectionShowcase .productCardContainer {
+    padding: 0;
+}
+
+.greyCard {
+    width: 18.125em;
+    height: 7.6em;
+    background-color: $light-02;
+    @include centerItems();
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+}
+
+.productCard .greyCard {
+    padding: 0; 
+}
+
+.productCard .gloopSeriesContainer {
+    width: 50%;
+    padding: 0 0.9em 0 1.6em;
+}
+
+.orangeText {
+    margin: 0;
+    font-size: 0.75em;
+    font-weight: 450;
+    text-transform: uppercase;
+    color: $orange;
+}
+
+.cardHeadings {
+    margin: 0;
+    padding: 0.6em 0;
+    font-size: 1.125em;
+    font-weight: 450;
+    color: $dark-01;
+}
+
+.cardGreyText {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 350;
+    color: $dark-03;
+}
+
+.productCard .topBidContainer {
+    width: 50%;
+    padding: 0;
+    @include centerItems();
+
+    img {
+        padding-bottom: 0.3em;
+    }
+
+    div {
+        text-align: right;
+        padding: 0 0.9em 0 0.3em;
+    }
+}
+
+.greyText {
+    margin: 0;
+    font-size: 0.75em;
+    font-weight: 450;
+    text-transform: uppercase;
+    color: $dark-03;
+}
+
+// Footer - Upsell
+
+.footerUpsell {
+    height: 34vh;
+}
+
+.divider {
+    width: 100%;
+    height: 0.25em;
+    background-color: $light-02;  
+}
+
+.footerUpsellContainer {
+    width: 54%;
+    height: 31vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.9em;
+    padding-top: 1.9em;
+
+    p {
+        color: $dark-02;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        margin-top: 0;
+        margin-bottom: 1.9em;
+    }
+}
+
+.nftHeadingFooter {
+    font-weight: 900;
+    font-size: 2.8em;
+    line-height: 1.1em;
+    margin-bottom: 0.7em;
+    margin-top: 0.2em;
+}
+
+.footerImage {
+    position: relative;
+    bottom: 26em;
+    left: 18.25em;
+}
+
+// Footer - Main
+
+.footerLogoContainer {
+    padding-left: 1.8em;
+    padding-top: 3.1em;
+
+    p {
+        color: $dark-02;
+        padding: 0.1em 0;
+    }
+
+    nav {
+        a {
+            padding-right: 10px;
+            i {
+                color: $dark-04;
+            }
+        }
+    }
+}
+
+.footerMiddleNavigation {
+    padding-left: 1.8em;
+    padding-top: 2.5em;
+
+    div {
+        p {
+            color: $dark-02;
+            font-weight: 600;
+            font-size: 0.8em;
+            letter-spacing: 0.075em;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            padding-left: 0;
+            li {
+                list-style-type: none;
+                margin-bottom: 0.9em;
+
+                a {
+                    text-decoration: none;
+                    color: $dark-02;
+                }
+            }
+        }
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.copyright {
+    padding-left: 1.8em;
+    color: $dark-04;
+    margin-top: 2.5em;
+    margin-bottom: 3.1em;
+}
+
+.footerLaunching {
+    color: $dark-04;
+    margin-top: 2.5em;
+    margin-bottom: 3.1em;
+    display: none;
+}

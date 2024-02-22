@@ -1,0 +1,165 @@
+@media screen and (min-width: 1080px) {
+
+    body {
+        // Header 
+        .mainHeader {
+            padding: 3.1em;
+    
+            div {
+                display: flex;
+
+                nav {    
+                    a {
+                        text-decoration: none;
+                        margin-left: 1.25em;
+                    }
+                }  
+            }
+            
+            i {
+                display: none;
+            }
+        }
+
+        // Section One - Hero
+        .sectionHero {
+            margin: 1.8em;
+            display: flex;
+        }
+        
+        .sectionHeroContainer {
+            width: 50%;
+            height: 30vh;
+            padding-right: 0.5em;
+            
+            .nftHeading {
+                font-size: 3em;
+                line-height: 1.2em;
+                margin-bottom: 1em;
+                margin-top: 0.1em;
+            }
+        }
+
+        .pinkGraphicImage {
+           width: 43.5em;
+           height: 43.75em;
+           bottom: 5em;
+           left: 1.25em;
+        }
+
+        // Section Two - Upsell
+
+        .sectionUpsell {
+
+            .gradientBackground {
+                width: 100%;
+                position: static;
+                margin-left: 3em;
+
+                div {
+                    margin-bottom: -1.25em;
+                }
+            }
+        }
+
+        // Section Three - Press
+
+        .sectionPress {
+            display: flex;
+            justify-content: center;
+            gap: 5em;
+
+            .imageCrop{
+                width: 12em;
+                overflow: unset;
+            }
+
+            .pressCompanyLogo {
+                display: block;
+            }
+
+            img {
+                width: 12.5em;
+                height: 10em;
+            }
+        }
+
+        // Section Four - Showcase
+
+        .sectionShowcase {
+            padding-left: 2.5em;
+            height: 40vh;
+
+            .article3 {
+                display: block;
+            }
+
+            .article4 {
+                display: block;
+            }
+        }
+
+        // Footer - Upsell
+
+        .footerUpsell {
+
+            .divider {
+                width: 80em;
+                margin-left: 3.75em;
+            }
+
+            .footerUpsellContainer {
+                width: 50%;
+                padding-top: 5em;
+                padding-left: 3.75em;
+            }
+
+            .nftHeadingFooter {
+                font-size: 60px;
+                margin: 30px 0;
+            }
+
+            .footerImage {
+                position: relative;
+                bottom: 26em;
+                left: 60em;
+            }
+        }
+
+        // Footer - Main
+
+        .mainFooter {
+            display: grid;
+            grid-template-columns: repeat(2, 41em);
+
+            .divider {
+                width: 80em;
+                margin-left: 3.75em;
+            }
+
+            .footerLogoContainer {
+                grid-column: 1;
+                margin-left: 2.5em;
+            }
+
+            .footerMiddleNavigation {
+                padding-left: 10.6em;
+                nav {
+                    display: flex;
+                    gap: 3.75em;
+                }
+            }
+
+            .copyright {
+                padding-top: 3.1em;
+                padding-left: 3.75em;
+            }
+
+            .footerLaunching {
+                display: block;
+                padding-left: 29em;
+                padding-top: 2.5em;
+            }
+        }
+    }    
+}

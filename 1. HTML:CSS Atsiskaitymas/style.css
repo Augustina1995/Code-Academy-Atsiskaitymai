@@ -1,0 +1,353 @@
+@import "./desktop.css";
+* {
+  box-sizing: border-box;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+.mainHeader div {
+  display: none;
+}
+.mainHeader div nav a {
+  color: #555555;
+}
+.mainHeader div nav a:last-child {
+  color: #FF3998;
+}
+.mainHeader i {
+  font-size: 1.6em;
+  color: #999999;
+}
+
+.sectionHero {
+  height: 30vh;
+  padding-left: 1.9em;
+}
+.sectionHero p {
+  color: #555555;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.7em;
+  margin-top: 0;
+  margin-bottom: 1.9em;
+}
+
+.sectionHeroContainer {
+  width: 52%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.launchingSoonHeading {
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FF3998;
+}
+
+.nftHeading {
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 1.3em;
+}
+
+.pinkGraphicImage {
+  width: 28em;
+  position: relative;
+  bottom: 34em;
+  left: 12.25em;
+}
+
+.buttonSignUp {
+  width: 11em;
+  height: 4.5em;
+  border-radius: 2.2em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.buttonSignUp::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 350%;
+  background: linear-gradient(to right, #FF3998, #ff8039, #ff3939);
+}
+
+.buttonSignUp::after {
+  content: "Sign Up";
+  position: absolute;
+  background-color: #ffffff;
+  width: 96%;
+  height: 88%;
+  border-radius: 2.2em;
+  font-size: 2rem;
+  color: #111111;
+  font-weight: 500;
+  font-size: 1.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradientBackground {
+  width: 32em;
+  height: 20vh;
+  background-image: url(./assets/background.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  right: 1.25em;
+}
+.gradientBackground div {
+  padding-left: 3.1em;
+  padding-right: 2.5em;
+  padding-top: 5em;
+}
+.gradientBackground div p {
+  color: #111111;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.7em;
+}
+
+.headingStyle {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.sectionPress {
+  height: 15vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 2.5em 2em;
+}
+
+.pressCompanyLogo {
+  display: none;
+}
+
+.imageCrop {
+  width: 65%;
+  height: 4vh;
+  overflow: hidden;
+}
+
+.sectionShowcase {
+  height: 38vh;
+}
+.sectionShowcase div {
+  padding: 0 1.6em;
+}
+.sectionShowcase h1 {
+  margin-top: 0;
+}
+.sectionShowcase p {
+  color: #555555;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.7em;
+  padding-bottom: 1.25em;
+}
+.sectionShowcase p a {
+  color: #555555;
+}
+.sectionShowcase article {
+  padding: 0 1.6em;
+}
+.sectionShowcase article img {
+  display: block;
+}
+.sectionShowcase .article3 {
+  display: none;
+}
+.sectionShowcase .article4 {
+  display: none;
+}
+
+.productCardContainer {
+  display: flex;
+}
+
+.sectionShowcase .productCardContainer {
+  padding: 0;
+}
+
+.greyCard {
+  width: 18.125em;
+  height: 7.6em;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
+}
+
+.productCard .greyCard {
+  padding: 0;
+}
+
+.productCard .gloopSeriesContainer {
+  width: 50%;
+  padding: 0 0.9em 0 1.6em;
+}
+
+.orangeText {
+  margin: 0;
+  font-size: 0.75em;
+  font-weight: 450;
+  text-transform: uppercase;
+  color: #ff8039;
+}
+
+.cardHeadings {
+  margin: 0;
+  padding: 0.6em 0;
+  font-size: 1.125em;
+  font-weight: 450;
+  color: #111111;
+}
+
+.cardGreyText {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 350;
+  color: #777777;
+}
+
+.productCard .topBidContainer {
+  width: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productCard .topBidContainer img {
+  padding-bottom: 0.3em;
+}
+.productCard .topBidContainer div {
+  text-align: right;
+  padding: 0 0.9em 0 0.3em;
+}
+
+.greyText {
+  margin: 0;
+  font-size: 0.75em;
+  font-weight: 450;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.footerUpsell {
+  height: 34vh;
+}
+
+.divider {
+  width: 100%;
+  height: 0.25em;
+  background-color: #eeeeee;
+}
+
+.footerUpsellContainer {
+  width: 54%;
+  height: 31vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.9em;
+  padding-top: 1.9em;
+}
+.footerUpsellContainer p {
+  color: #555555;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-top: 0;
+  margin-bottom: 1.9em;
+}
+
+.nftHeadingFooter {
+  font-weight: 900;
+  font-size: 2.8em;
+  line-height: 1.1em;
+  margin-bottom: 0.7em;
+  margin-top: 0.2em;
+}
+
+.footerImage {
+  position: relative;
+  bottom: 26em;
+  left: 18.25em;
+}
+
+.footerLogoContainer {
+  padding-left: 1.8em;
+  padding-top: 3.1em;
+}
+.footerLogoContainer p {
+  color: #555555;
+  padding: 0.1em 0;
+}
+.footerLogoContainer nav a {
+  padding-right: 10px;
+}
+.footerLogoContainer nav a i {
+  color: #999999;
+}
+
+.footerMiddleNavigation {
+  padding-left: 1.8em;
+  padding-top: 2.5em;
+}
+.footerMiddleNavigation div p {
+  color: #555555;
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.footerMiddleNavigation div ul {
+  padding-left: 0;
+}
+.footerMiddleNavigation div ul li {
+  list-style-type: none;
+  margin-bottom: 0.9em;
+}
+.footerMiddleNavigation div ul li a {
+  text-decoration: none;
+  color: #555555;
+}
+.footerMiddleNavigation nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.copyright {
+  padding-left: 1.8em;
+  color: #999999;
+  margin-top: 2.5em;
+  margin-bottom: 3.1em;
+}
+
+.footerLaunching {
+  color: #999999;
+  margin-top: 2.5em;
+  margin-bottom: 3.1em;
+  display: none;
+}/*# sourceMappingURL=style.css.map */

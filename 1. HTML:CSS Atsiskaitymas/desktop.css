@@ -1,0 +1,116 @@
+@media screen and (min-width: 1080px) {
+  body .mainHeader {
+    padding: 3.1em;
+  }
+  body .mainHeader div {
+    display: flex;
+  }
+  body .mainHeader div nav a {
+    text-decoration: none;
+    margin-left: 1.25em;
+  }
+  body .mainHeader i {
+    display: none;
+  }
+  body .sectionHero {
+    margin: 1.8em;
+    display: flex;
+  }
+  body .sectionHeroContainer {
+    width: 50%;
+    height: 30vh;
+    padding-right: 0.5em;
+  }
+  body .sectionHeroContainer .nftHeading {
+    font-size: 3em;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+    margin-top: 0.1em;
+  }
+  body .pinkGraphicImage {
+    width: 43.5em;
+    height: 43.75em;
+    bottom: 5em;
+    left: 1.25em;
+  }
+  body .sectionUpsell .gradientBackground {
+    width: 100%;
+    position: static;
+    margin-left: 3em;
+  }
+  body .sectionUpsell .gradientBackground div {
+    margin-bottom: -1.25em;
+  }
+  body .sectionPress {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+  }
+  body .sectionPress .imageCrop {
+    width: 12em;
+    overflow: unset;
+  }
+  body .sectionPress .pressCompanyLogo {
+    display: block;
+  }
+  body .sectionPress img {
+    width: 12.5em;
+    height: 10em;
+  }
+  body .sectionShowcase {
+    padding-left: 2.5em;
+    height: 40vh;
+  }
+  body .sectionShowcase .article3 {
+    display: block;
+  }
+  body .sectionShowcase .article4 {
+    display: block;
+  }
+  body .footerUpsell .divider {
+    width: 80em;
+    margin-left: 3.75em;
+  }
+  body .footerUpsell .footerUpsellContainer {
+    width: 50%;
+    padding-top: 5em;
+    padding-left: 3.75em;
+  }
+  body .footerUpsell .nftHeadingFooter {
+    font-size: 60px;
+    margin: 30px 0;
+  }
+  body .footerUpsell .footerImage {
+    position: relative;
+    bottom: 26em;
+    left: 60em;
+  }
+  body .mainFooter {
+    display: grid;
+    grid-template-columns: repeat(2, 41em);
+  }
+  body .mainFooter .divider {
+    width: 80em;
+    margin-left: 3.75em;
+  }
+  body .mainFooter .footerLogoContainer {
+    grid-column: 1;
+    margin-left: 2.5em;
+  }
+  body .mainFooter .footerMiddleNavigation {
+    padding-left: 10.6em;
+  }
+  body .mainFooter .footerMiddleNavigation nav {
+    display: flex;
+    gap: 3.75em;
+  }
+  body .mainFooter .copyright {
+    padding-top: 3.1em;
+    padding-left: 3.75em;
+  }
+  body .mainFooter .footerLaunching {
+    display: block;
+    padding-left: 29em;
+    padding-top: 2.5em;
+  }
+}/*# sourceMappingURL=desktop.css.map */
